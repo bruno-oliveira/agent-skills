@@ -1,0 +1,19 @@
+{
+  "footer": "THE EXAMPLE BOOK · MD2PDF",
+  "epub": { "author": "The Example Author", "language": "en" },
+  "cover": {
+    "kicker": "A TWO-PART EXAMPLE",
+    "title": "The Example\nBook",
+    "subtitle": "A minimal multi-part document demonstrating covers, part dividers, and per-section control.",
+    "pill_a": "PART ONE", "pill_b": "PART TWO",
+    "foot": "MD2PDF-CREATOR · SAMPLE"
+  },
+  "sections": [
+    { "divider": { "kicker": "Part I", "title": "Foundations",
+                   "description": "The ideas everything else rests on." },
+      "file": "example-part1.md", "strip_h1": true },
+    { "divider": { "kicker": "Part II", "title": "In Practice",
+                   "description": "Putting the ideas to work.", "warm": true },
+      "file": "example-part2.md", "strip_h1": true }
+  ]
+}
