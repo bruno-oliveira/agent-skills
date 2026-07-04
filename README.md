@@ -20,6 +20,14 @@ Skills are designed to be loaded by AI coding agents (Claude, Cursor, OpenCode, 
 |-------|-------------|
 | [md2pdf-creator](skills/md2pdf-creator.skill) | Turn Markdown into polished, branded PDFs and EPUBs with dark cover pages, part dividers, running footers, and refined typography (Bricolage Grotesque + IBM Plex). |
 
+## Examples
+
+See what these skills can produce:
+
+| Example | Produced by |
+|---------|-------------|
+| [Flat to Mountain — Third Edition.pdf](examples/Flat%20to%20Mountain%20%E2%80%94%20Third%20Edition.pdf) | md2pdf-creator |
+
 ## How to use
 
 1. Download a `.skill` file from the `skills/` directory
