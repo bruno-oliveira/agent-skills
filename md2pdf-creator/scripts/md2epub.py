@@ -212,7 +212,7 @@ def make_cover_png(cover, theme, target_w=1600, target_h=2560):
 body {{ margin: 0; }}
 .cover {{ width: {w_css}px; height: {h_css}px; box-sizing: border-box;
   background: {t['cover_bg']}; color: {t['cover_ink']};
-  padding: 100px 64px; position: relative;
+  padding: 100px 96px; position: relative;
   font-family: '{t['font_body']}', sans-serif; }}
 .kicker {{ font-family: '{t['font_mono']}', monospace; font-size: 17px;
   letter-spacing: 0.2em; text-transform: uppercase; color: {t['cover_kicker']}; }}
@@ -226,7 +226,7 @@ h1 {{ font-family: '{t['font_display']}', sans-serif; font-weight: 800;
 .vs {{ color: #7E9C95; margin: 0 12px; }}
 .pb {{ color: {t['pill_b']}; border: 2px solid {t['pill_b']}; border-radius: 8px;
   padding: 10px 16px; display: inline-block; }}
-.foot {{ position: absolute; bottom: 72px; left: 64px; right: 64px;
+.foot {{ position: absolute; bottom: 72px; left: 96px; right: 96px;
   font-family: '{t['font_mono']}', monospace; font-size: 15px;
   color: #7E9C95; letter-spacing: 0.1em; }}
 </style></head><body><div class="cover">
