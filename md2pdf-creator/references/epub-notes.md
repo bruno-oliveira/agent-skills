@@ -74,6 +74,18 @@ e-reader libraries sort by it and "Unknown author" looks unfinished.
 - **No running footer or page numbers** — pagination is dynamic. The spec's
   `footer` key is ignored for EPUB.
 
+## Cover safe margins (Kobo and other e-readers)
+
+The raster cover (`cover.png`) is generated at a fixed 1600×2560 (5:8) canvas,
+but the device that ends up displaying it — e.g. a Kobo Libra H2O's library
+thumbnail — often crops to a different aspect ratio before showing it. On
+Kobo devices in particular this has been observed to clip the left/right
+edges of the image. To guard against this, the cover's horizontal padding is
+intentionally generous (96px CSS / ~12% of width on each side, vs. 100px top
+and bottom), keeping the kicker, title, pills, and foot text away from the
+edges most likely to be cropped. Don't shrink this back down to make the
+cover "look tighter" — it trades a real clipping bug for a cosmetic gain.
+
 ## Fonts
 
 The woff2 set is embedded and referenced with `@font-face` (~180 KB). Notes:
